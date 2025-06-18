@@ -1,6 +1,6 @@
-# 🧠 Lookahead KMeans: Smarter Cluster Initialization
+# 🧠 Lookahead K-Means: Smarter Cluster Initialization
 
-This repo implements and compares a **lookahead-based initialization** strategy for KMeans against standard `k-means++`. The lookahead approach generates multiple candidate initializations and runs a few KMeans steps (not the full algorithm) for each. It then selects the initialization that produces the best intermediate silhouette score after this limited rollout.
+This repo implements and compares a **lookahead-based initialization** strategy for KMeans against standard `k-means++`. The lookahead approach generates multiple candidate initializations and runs a few K-Means steps (not the full algorithm) for each. It then selects the initialization that produces the best intermediate silhouette score after this limited rollout.
 
 ## 🔍 What’s Inside
 
@@ -16,7 +16,7 @@ This repo implements and compares a **lookahead-based initialization** strategy 
 ## 🧠 Lookahead Strategy
 
 * Randomly initialize multiple candidate centroids
-* For each, simulate several KMeans steps (rollout_depth)
+* For each, simulate several K-Means steps (rollout_depth)
 * Pick the one with the best silhouette score
 
 ## 📈 Results
